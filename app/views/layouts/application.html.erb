@@ -7,12 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>
-    Ruby Weather
-  </h1>
+  <%= render 'header' %>
   <%= yield %>
-  <p>
-    <em><%= Time.now %></em>
-  </p>
+  <%= render 'footer' %>
 </body>
 </html>
