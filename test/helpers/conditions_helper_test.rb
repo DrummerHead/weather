@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WelcomeHelperTest < ActionView::TestCase
+class ConditionsHelperTest < ActionView::TestCase
   test "temperature format for an integer value" do
     assert_equal '15.0', format_temperature(15)
   end
