@@ -4,7 +4,6 @@ class WelcomeControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:temperature)
-    assert_not_nil assigns(:description)
+    assert_not_nil assigns(:condition)
   end
 end
