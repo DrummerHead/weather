@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @temperature = 15.0
-    @description = 'Sunny'
+    @temperature = 10.0 + rand * 20.0
+    @description = %w[Sunny Cloudy Rainy].sample
   end
 end
