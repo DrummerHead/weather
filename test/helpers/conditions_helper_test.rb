@@ -8,4 +8,8 @@ class ConditionsHelperTest < ActionView::TestCase
   test "temperature format for condition" do
     assert_match /-?\d+\.\d/, format_temperature_for(@condition)
   end
+
+  test "google maps javascript include tag" do
+    assert_match /maps\.googleapis\.com/, google_maps_javascript_include_tag
+  end
 end
