@@ -5,11 +5,11 @@ class ConditionTest < ActiveSupport::TestCase
     @condition = Condition.new
   end
 
-  test "returns temperature in range" do
-    assert (10...30) === @condition.temperature
+  test "returns temperature as numeric" do
+    assert_kind_of Numeric, @condition.temperature
   end
 
-  test "returns known description" do
-    assert %w[Sunny Rainy Cloudy].include? @condition.description
+  test "returns non-blank description" do
+    refute @condition.description.blank?
   end
 end
