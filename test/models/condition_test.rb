@@ -23,4 +23,12 @@ class ConditionTest < ActiveSupport::TestCase
       assert_equal @city.send(attribute), @condition.send(attribute)
     end
   end
+
+  test "returns latitude in range" do
+    assert_in_delta 0, @condition.latitude, 90
+  end
+
+  test "returns longitude in range" do
+    assert_in_delta 0, @condition.longitude, 180
+  end
 end

@@ -21,10 +21,22 @@ class Condition
     condition['text']
   end
 
+  def latitude
+    item['lat'].to_f
+  end
+
+  def longitude
+    item['long'].to_f
+  end
+
   private
 
+  def item
+    response['rss']['channel']['item']
+  end
+
   def condition
-    response['rss']['channel']['item']['condition']
+    item['condition']
   end
 
   def response
