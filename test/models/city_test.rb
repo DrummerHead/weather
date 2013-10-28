@@ -13,13 +13,10 @@ class CityTest < ActiveSupport::TestCase
     assert_equal 12345, @city.woeid
   end
 
-  test "is invalid without name" do
-    @city.name = nil
-    assert @city.invalid?
-  end
-
-  test "is invalid without woeid" do
-    @city.woeid = nil
-    assert @city.invalid?
+  %w[name woeid].each do |attribute|
+    test "is invalid without #{attribute}" do
+      @city.send "#{attribute}=", nil
+      assert @city.invalid?
+    end
   end
 end
