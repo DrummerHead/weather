@@ -1,5 +1,5 @@
 <ul>
-  <li>Montevideo</li>
-  <li>Paysandu</li>
-  <li>Salto</li>
+  <% @cities.each do |city| %>
+    <li><%= city.name %></li>
+  <% end %>
 </ul>
