@@ -1,5 +1,5 @@
 module ConditionsHelper
-  def format_temperature(value)
-    '%.1f' % value
+  def format_temperature_for(condition)
+    '%.1f' % condition.temperature
   end
 end
