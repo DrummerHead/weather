@@ -10,5 +10,6 @@ class ConditionsControllerTest < ActionController::TestCase
     assert_response :success
     assert_equal @city, assigns(:city)
     assert_not_nil assigns(:condition)
+    assert_equal @city.woeid, assigns(:condition).woeid
   end
 end
