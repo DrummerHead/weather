@@ -2,8 +2,7 @@ require 'test_helper'
 
 class ConditionsHelperTest < ActionView::TestCase
   setup do
-    @city = cities(:montevideo)
-    @condition = Condition.new(@city)
+    @condition = cities(:montevideo).condition
   end
 
   test "temperature format for condition" do

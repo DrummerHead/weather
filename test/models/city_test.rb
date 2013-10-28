@@ -19,4 +19,8 @@ class CityTest < ActiveSupport::TestCase
       assert @city.invalid?
     end
   end
+
+  test "returns self assigned condition" do
+    assert_equal @city, @city.condition.city
+  end
 end

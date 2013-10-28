@@ -8,8 +8,6 @@ class ConditionsControllerTest < ActionController::TestCase
   test "should get show" do
     get :show, city_id: @city
     assert_response :success
-    assert_equal @city, assigns(:city)
-    assert_not_nil assigns(:condition)
-    assert_equal @city.woeid, assigns(:condition).woeid
+    assert_equal @city, assigns(:condition).city
   end
 end
