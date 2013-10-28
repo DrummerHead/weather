@@ -12,4 +12,14 @@ class CityTest < ActiveSupport::TestCase
   test "returns woeid" do
     assert_equal 12345, @city.woeid
   end
+
+  test "is invalid without name" do
+    @city.name = nil
+    assert @city.invalid?
+  end
+
+  test "is invalid without woeid" do
+    @city.woeid = nil
+    assert @city.invalid?
+  end
 end
