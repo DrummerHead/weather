@@ -5,15 +5,13 @@ class Condition
   format :xml
   default_params u: :c
 
-  MONTEVIDEO = 468052
-  PAYSANDU   = 468055
-  SALTO      = 468056
+  attr_reader :city
 
-  attr_reader :woeid
-
-  def initialize(woeid = MONTEVIDEO)
-    @woeid = woeid
+  def initialize(city)
+    @city = city
   end
+
+  delegate :woeid, :name, to: :city
 
   def temperature
     condition['temp'].to_f
