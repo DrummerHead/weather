@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CityTest < ActiveSupport::TestCase
   setup do
-    @city = City.new(name: 'Montevideo', woeid: 12345)
+    @city = cities(:montevideo)
   end
 
   test "returns name" do
@@ -10,7 +10,7 @@ class CityTest < ActiveSupport::TestCase
   end
 
   test "returns woeid" do
-    assert_equal 12345, @city.woeid
+    assert_equal 468052, @city.woeid
   end
 
   %w[name woeid].each do |attribute|
