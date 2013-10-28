@@ -1,6 +1,6 @@
 Weather::Application.routes.draw do
-  resources :cities do
-    resource :condition
+  resources :cities, only: :index do
+    resource :condition, only: :show
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
