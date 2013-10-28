@@ -1,6 +1,13 @@
 class ConditionsController < ApplicationController
+  before_action :set_city
+
   def show
-    @city = City.find(params[:city_id])
     @condition = @city.condition
+  end
+
+  protected
+
+  def set_city
+    @city = City.find(params[:city_id])
   end
 end
