@@ -25,7 +25,10 @@
       zoom: 12,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    new google.maps.Map(canvas[0], mapOptions);
+
+    if (canvas[0] !== undefined) {
+      new google.maps.Map(canvas[0], mapOptions);
+    }
   }
 
   // Handle Turbolinks page reloads. https://github.com/rails/turbolinks#events.
