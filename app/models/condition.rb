@@ -40,6 +40,6 @@ class Condition
   end
 
   def response
-    @response ||= self.class.get('/forecastrss', query: { w: woeid })
+    @response ||= self.class.get('/forecastrss', query: { w: woeid, c: 'c' })
   end
 end
