@@ -1,10 +1,12 @@
-<p>
-  Current weather conditions for <%= @condition.name %>:
-</p>
-<dl>
-  <dt>Temperature</dt>
-  <dd><%= format_temperature_for @condition %></dd>
-  <dt>Condition</dt>
-  <dd><%= @condition.description %></dd>
-</dl>
+<div id=weather>
+  <h2><%= format_temperature_for @condition %></h2>
+  <ul>
+    <li>
+      <%= @condition.name %>
+    </li>
+    <li>
+      <%= @condition.description %>
+    </li>
+  </ul>
+</div>
 <%= map_tag_for @condition %>

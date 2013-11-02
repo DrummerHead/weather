@@ -1,5 +1,5 @@
-<ul>
+<ul class='city-list'>
   <% @cities.each do |city| %>
-    <li><%= link_to city.name, city_condition_path(city) %></li>
+    <li><%= link_to city.name, city_condition_path(city), class: 'city-link' %></li>
   <% end %>
 </ul>
