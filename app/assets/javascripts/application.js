@@ -12,11 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require typeahead
 //= require turbolinks
 //= require_tree .
 
 (function($) {
-  function initialize() {
+  function initMaps(){
     var canvas     = $('#map-canvas');
     var latitude   = canvas.data('latitude');
     var longitude  = canvas.data('longitude');
@@ -29,6 +30,20 @@
     if (canvas[0] !== undefined) {
       new google.maps.Map(canvas[0], mapOptions);
     }
+  }
+
+  function initTypeahead(){
+    $(".city-search input[name='search']").typeahead({
+      prefetch: 'cities.json',
+      valueKey: 'name'
+    }).on('typeahead:selected', function (obj, datum) {
+      window.location = "/cities/" + datum.id + "/condition";
+    });
+  }
+
+  function initialize() {
+    initMaps();
+    initTypeahead();
   }
 
   // Handle Turbolinks page reloads. https://github.com/rails/turbolinks#events.

@@ -9,11 +9,37 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require typeahead.js-bootstrap.css
  *= require_tree .
  */
 
 li {
   list-style: none;
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 396px;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.twitter-typeahead .tt-dropdown-menu {
+  width: 422px;
+}
+
+.city-search {
+  width: 422px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .city-link {
@@ -76,9 +102,6 @@ header a {
   padding: 20px;
   display: inline-block;
   border-radius: 5px;
-  margin-left: 20px;
-}
-
-#weather li:nth-of-type(1) {
-  margin-left: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
