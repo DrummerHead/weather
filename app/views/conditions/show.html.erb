@@ -1,4 +1,5 @@
 <div id=weather>
+  <h2 class='today-title'> Today </h2>
   <h2><%= format_temperature_for @condition %></h2>
   <ul>
     <li>
@@ -8,5 +9,11 @@
       <%= @condition.description %>
     </li>
   </ul>
+
+  <h2 class='forecast-title'> Three day forecast </h2>
+
+  <%= link_to '‹', 'javascript:;', class: 'forecast-control'%>
+  <%= render partial: 'forecast', collection: @condition.forecast %>
+  <%= link_to '›', 'javascript:;', class: 'forecast-control right'%>
 </div>
 <%= map_tag_for @condition %>

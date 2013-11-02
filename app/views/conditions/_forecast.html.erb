@@ -1,0 +1,4 @@
+<div class='forecast <%= 'hide' if forecast_counter != 0 %>' data-index='<%= forecast_counter %>'>
+  <h2 class='forecast-day-title'> <%= forecast['day'] %> <%= forecast['date'] %></h2>
+  <h2 class='forecast-high-low'>L <%= forecast['low'] %> / M <%= forecast ['high'] %></h2>
+</div>

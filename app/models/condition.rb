@@ -29,6 +29,10 @@ class Condition
     item['long'].to_f
   end
 
+  def forecast
+    item['forecast'][1..3]
+  end
+
   private
 
   def item

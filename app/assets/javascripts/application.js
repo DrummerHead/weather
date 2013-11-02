@@ -29,6 +29,23 @@
     if (canvas[0] !== undefined) {
       new google.maps.Map(canvas[0], mapOptions);
     }
+
+    $('.forecast-control').click(function(event) {
+      var current = $('#weather .forecast:visible');
+      var current_index = current.data('index');
+      var right = $(this).hasClass('right')
+      var left = !right
+      if ((right && current_index + 1 > 2) || (left && current_index - 1 < 0))
+      {
+        current_index = right ? 0 : 2;
+      }
+      else
+      {
+        current_index = right ? current_index + 1 : current_index -1;
+      }
+      current.toggleClass('hide');
+      $($('#weather .forecast').get(current_index)).toggleClass('hide')
+    });
   }
 
   // Handle Turbolinks page reloads. https://github.com/rails/turbolinks#events.
