@@ -46,3 +46,6 @@ end
 
 # Use HTTParty to consume web services
 gem 'httparty'
+
+# Use Nokogiri to parse condition codes.
+gem 'nokogiri', require: false
