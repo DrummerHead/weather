@@ -14,6 +14,10 @@ class ConditionTest < ActiveSupport::TestCase
     refute @condition.description.blank?
   end
 
+  test "returns numeric code" do
+    assert_kind_of Numeric, @condition.code
+  end
+
   test "returns city" do
     assert_equal @city, @condition.city
   end

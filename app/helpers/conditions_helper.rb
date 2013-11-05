@@ -3,6 +3,14 @@ module ConditionsHelper
     '%.1f' % condition.temperature
   end
 
+  def condition_tag_for(condition, &block)
+    content_tag(:dl, class: condition_class_for(condition), &block)
+  end
+
+  def condition_class_for(condition)
+    'code-%d' % condition.code
+  end
+
   def google_maps_javascript_include_tag
     javascript_include_tag google_maps_source
   end

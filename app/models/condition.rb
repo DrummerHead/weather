@@ -21,6 +21,10 @@ class Condition
     condition['text']
   end
 
+  def code
+    condition['code'].to_i
+  end
+
   def latitude
     item['lat'].to_f
   end
