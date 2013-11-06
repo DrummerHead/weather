@@ -1,0 +1,266 @@
+/* Weather - Learning Rails App */
+
+
+/*
+ * Helpers, mixins
+ * - - - - - - - - - - - - - - */
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear:both;
+  }
+}
+@mixin transition($seconds, $type){
+  -webkit-transition: $seconds $type all;
+     -moz-transition: $seconds $type all;
+      -ms-transition: $seconds $type all;
+       -o-transition: $seconds $type all;
+          transition: $seconds $type all;
+}
+/* End Helpers, mixins */
+
+
+
+
+/*
+ * Baseline
+ * - - - - - - - - - - - - - - */
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0 0 9em;
+  background-image: image-url("cream-dust.png")
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-family: "Avenir", sans-serif;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+/* End Baseline */
+
+
+
+
+/*
+ * Modular
+ * - - - - - - - - - - - - - - */
+
+.brand {
+  font-family: "American Typewriter", sans-serif;
+  font-weight: bold;
+}
+.border-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#map-canvas {
+  width: 100%;
+  height: 30em;
+}
+/* End Modular */
+
+
+
+
+/*
+ * Persistent
+ * - - - - - - - - - - - - - - */
+
+[role='banner'],
+[role='contentinfo'] {
+  background-color: rgba(77, 77, 111, .17);
+  padding: 1em 2em;
+  @extend .border-box;
+}
+[role='banner'] {
+}
+[role='banner'] .brand {
+  font-size: 2em;
+  color: #335;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: #002;
+  }
+}
+[role='contentinfo'] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+[role='contentinfo'] time {
+}
+[role='contentinfo'] p {
+  float: right;
+  margin: 0;
+}
+main {
+  padding: 1em 2em;
+}
+
+/* End Persistent */
+
+
+
+
+/*
+ * Specific page: Cities list
+ * - - - - - - - - - - - - - - */
+
+#cities-list {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  list-style-type: none;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+}
+#cities-list li {
+  padding: .1em 0;
+}
+#cities-list a {
+  color: #448;
+  text-decoration: none;
+  &:hover {
+    color: #55c;
+    text-decoration: underline;
+  }
+}
+
+/* End specific page: Cities list */
+
+
+
+
+/*
+ * Media queries
+ * - - - - - - - - - - - - - - */
+
+/* End Media queries */
+
+
+
+
+/*
+ * x
+ * - - - - - - - - - - - - - - */
+
+/* End x */
+
+
+/*
+ * Specific page: x
+ * - - - - - - - - - - - - - - */
+
+/* End specific page: x */
