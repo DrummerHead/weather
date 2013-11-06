@@ -1,5 +1,8 @@
-<ul>
-  <% @cities.each do |city| %>
-    <li><%= link_to city.name, city_condition_path(city) %></li>
-  <% end %>
-</ul>
+<main id='cities' role='main'>
+  <h1>Choose a city and get today&#8217;s weather!</h1>
+  <ul id='cities-list'>
+    <% @cities.each do |city| %>
+      <li><%= link_to city.name, city_condition_path(city) %></li>
+    <% end %>
+  </ul>
+</main>

@@ -1,10 +1,10 @@
-<p>
-  Current weather conditions for <%= @condition.name %>:
-</p>
-<%= condition_tag_for(@condition) do %>
-  <dt>Temperature</dt>
-  <dd><%= format_temperature_for @condition %></dd>
-  <dt>Condition</dt>
-  <dd><%= @condition.description %></dd>
-<% end %>
-<%= map_tag_for @condition %>
+<main id='city-conditions' role='main'>
+  <h1>Current weather conditions for <%= @condition.name %></h1>
+  <%= condition_tag_for(@condition) do %>
+    <dt>Temperature</dt>
+    <dd><%= format_temperature_for @condition %></dd>
+    <dt>Condition</dt>
+    <dd><%= @condition.description %></dd>
+  <% end %>
+  <%= map_tag_for @condition %>
+</main>
