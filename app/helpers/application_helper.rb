@@ -1,5 +1,5 @@
 module ApplicationHelper
   def current_time
-    Time.now
+    Time.now.asctime
   end
 end
