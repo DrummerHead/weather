@@ -160,6 +160,14 @@ template {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+.meetup,
+.meetup img {
+  display: inline-block;
+}
+.meetup img {
+  width: 100%;
+  height: auto;
+}
 #map-canvas {
   width: 100%;
   height: 30em;
@@ -189,6 +197,12 @@ template {
     text-decoration: underline;
     color: #002;
   }
+}
+[role='banner'] .meetup {
+  float: right;
+  width: 54px;
+  position: relative;
+  top: -4px;
 }
 [role='contentinfo'] {
   position: absolute;
