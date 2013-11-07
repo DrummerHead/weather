@@ -1,147 +1,234 @@
-.tornado,
-.code-0 {
+.tornado:before,
+.code-0:before,
+.tropical-storm:before,
+.code-1:before,
+.hurricane:before,
+.code-2:before,
+.severe-thunderstorms:before,
+.code-3:before,
+.thunderstorms:before,
+.code-4:before,
+.mixed-rain-and-snow:before,
+.code-5:before,
+.mixed-rain-and-sleet:before,
+.code-6:before,
+.mixed-snow-and-sleet:before,
+.code-7:before,
+.freezing-drizzle:before,
+.code-8:before,
+.drizzle:before,
+.code-9:before,
+.freezing-rain:before,
+.code-10:before,
+.showers:before,
+.code-11:before,
+.showers:before,
+.code-12:before,
+.snow-flurries:before,
+.code-13:before,
+.light-snow-showers:before,
+.code-14:before,
+.blowing-snow:before,
+.code-15:before,
+.snow:before,
+.code-16:before,
+.hail:before,
+.code-17:before,
+.sleet:before,
+.code-18:before,
+.dust:before,
+.code-19:before,
+.foggy:before,
+.code-20:before,
+.haze:before,
+.code-21:before,
+.smoky:before,
+.code-22:before,
+.blustery:before,
+.code-23:before,
+.windy:before,
+.code-24:before,
+.cold:before,
+.code-25:before,
+.cloudy:before,
+.code-26:before,
+.mostly-cloudy-night:before,
+.code-27:before,
+.mostly-cloudy-day:before,
+.code-28:before,
+.partly-cloudy-night:before,
+.code-29:before,
+.partly-cloudy-day:before,
+.code-30:before,
+.clear-night:before,
+.code-31:before,
+.sunny:before,
+.code-32:before,
+.fair-night:before,
+.code-33:before,
+.fair-day:before,
+.code-34:before,
+.mixed-rain-and-hail:before,
+.code-35:before,
+.hot:before,
+.code-36:before,
+.isolated-thunderstorms:before,
+.code-37:before,
+.scattered-thunderstorms:before,
+.code-38:before,
+.scattered-thunderstorms:before,
+.code-39:before,
+.scattered-showers:before,
+.code-40:before,
+.heavy-snow:before,
+.code-41:before,
+.scattered-snow-showers:before,
+.code-42:before,
+.heavy-snow:before,
+.code-43:before,
+.partly-cloudy:before,
+.code-44:before,
+.thundershowers:before,
+.code-45:before,
+.snow-showers:before,
+.code-46:before,
+.isolated-thundershowers:before,
+.code-47:before {
+  content: '';
+  background-image: image-url('conditions.png');
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 16px 0 10px;
+  background-repeat: no-repeat;
 }
-.tropical-storm,
-.code-1 {
+
+.tornado:before,
+.code-0:before,
+.tropical-storm:before,
+.code-1:before,
+.hurricane:before,
+.code-2:before,
+.dust:before,
+.code-19:before,
+.blustery:before,
+.code-23:before,
+.windy:before,
+.code-24:before {
+  background-position: -400px 0;
 }
-.hurricane,
-.code-2 {
+.severe-thunderstorms:before,
+.code-3:before {
+  background-position: -480px -80px;
 }
-.severe-thunderstorms,
-.code-3 {
+.thunderstorms:before,
+.code-4:before,
+.isolated-thunderstorms:before,
+.code-37:before,
+.scattered-thunderstorms:before,
+.code-38:before,
+.code-39:before,
+.isolated-thundershowers:before,
+.code-47:before {
+  background-position: -400px -80px;
 }
-.thunderstorms,
-.code-4 {
+.mixed-rain-and-snow:before,
+.code-5:before,
+.mixed-rain-and-sleet:before,
+.code-6:before,
+.scattered-snow-showers:before,
+.code-42:before {
+  background-position: -240px -160px;
 }
-.mixed-rain-and-snow,
-.code-5 {
+.mixed-snow-and-sleet:before,
+.code-7:before,
+.heavy-snow:before,
+.code-41:before,
+.code-43:before {
+  background-position: -320px -160px;
 }
-.mixed-rain-and-sleet,
-.code-6 {
+.freezing-drizzle:before,
+.code-8:before,
+.freezing-rain:before,
+.code-10:before,
+.snow-flurries:before,
+.code-13:before,
+.light-snow-showers:before,
+.code-14:before,
+.snow:before,
+.code-16:before,
+.mixed-rain-and-hail:before,
+.code-35:before {
+  background-position: -400px -160px;
 }
-.mixed-snow-and-sleet,
-.code-7 {
+.drizzle:before,
+.code-9:before,
+.scattered-showers:before,
+.code-40:before {
+  background-position: -560px -80px;
 }
-.freezing-drizzle,
-.code-8 {
+.showers:before,
+.code-11:before,
+.code-12:before {
+  background-position: -640px -80px;
 }
-.drizzle,
-.code-9 {
+.blowing-snow:before,
+.code-15:before,
+.hail:before,
+.code-17:before,
+.sleet:before,
+.code-18:before,
+.snow-showers:before,
+.code-46:before {
+  background-position: -160px -160px;
 }
-.freezing-rain,
-.code-10 {
+.foggy:before,
+.code-20:before,
+.haze:before,
+.code-21:before,
+.smoky:before,
+.code-22:before,
+.not-available:before,
+.code-3200:before {
+  background-position: -240px -80px;
 }
-.showers,
-.code-11 {
+.cold:before,
+.code-25:before {
+  background-position: -480px 0;
 }
-.showers,
-.code-12 {
+.cloudy:before,
+.code-26:before {
+  background-position: -320px -80px;
 }
-.snow-flurries,
-.code-13 {
+.mostly-cloudy-day:before,
+.code-28:before,
+.partly-cloudy-day:before,
+.code-30:before,
+.partly-cloudy:before,
+.code-44:before {
+  background-position: -560px 0;
 }
-.light-snow-showers,
-.code-14 {
+.mostly-cloudy-night:before,
+.code-27:before,
+.partly-cloudy-night:before,
+.code-29:before {
+  background-position: -640px 0;
 }
-.blowing-snow,
-.code-15 {
+.clear-night:before,
+.code-31:before,
+.fair-night:before,
+.code-33:before {
+  background-position: -160px -0px;
 }
-.snow,
-.code-16 {
+.sunny:before,
+.code-32:before,
+.fair-day:before,
+.code-34:before,
+.hot:before,
+.code-36:before {
+  background-position: -80px -0px;
 }
-.hail,
-.code-17 {
-}
-.sleet,
-.code-18 {
-}
-.dust,
-.code-19 {
-}
-.foggy,
-.code-20 {
-}
-.haze,
-.code-21 {
-}
-.smoky,
-.code-22 {
-}
-.blustery,
-.code-23 {
-}
-.windy,
-.code-24 {
-}
-.cold,
-.code-25 {
-}
-.cloudy,
-.code-26 {
-}
-.mostly-cloudy-night,
-.code-27 {
-}
-.mostly-cloudy-day,
-.code-28 {
-}
-.partly-cloudy-night,
-.code-29 {
-}
-.partly-cloudy-day,
-.code-30 {
-}
-.clear-night,
-.code-31 {
-}
-.sunny,
-.code-32 {
-}
-.fair-night,
-.code-33 {
-}
-.fair-day,
-.code-34 {
-}
-.mixed-rain-and-hail,
-.code-35 {
-}
-.hot,
-.code-36 {
-}
-.isolated-thunderstorms,
-.code-37 {
-}
-.scattered-thunderstorms,
-.code-38 {
-}
-.scattered-thunderstorms,
-.code-39 {
-}
-.scattered-showers,
-.code-40 {
-}
-.heavy-snow,
-.code-41 {
-}
-.scattered-snow-showers,
-.code-42 {
-}
-.heavy-snow,
-.code-43 {
-}
-.partly-cloudy,
-.code-44 {
-}
-.thundershowers,
-.code-45 {
-}
-.snow-showers,
-.code-46 {
-}
-.isolated-thundershowers,
-.code-47 {
-}
-.not-available,
-.code-3200 {
+.thundershowers:before,
+.code-45:before {
+  background-position: -640px -160px;
 }

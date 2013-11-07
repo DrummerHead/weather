@@ -244,6 +244,36 @@ main {
 
 
 /*
+ * Specific page: City condition
+ * - - - - - - - - - - - - - - */
+
+#city-conditions dl {
+  font-size: 1.2em;
+  max-width: 20em;
+  @include clearfix;
+}
+#city-conditions dt,
+#city-conditions dd {
+  float: left;
+  width: calc(50% - 53px);
+  padding: .1em 0;
+  margin: 0;
+  &:first-of-type {
+    margin-top: .5em;
+  }
+}
+#city-conditions dt {
+  color: #555;
+  &:after {
+    content: ':';
+  }
+}
+/* End specific page: City condition */
+
+
+
+
+/*
  * Media queries
  * - - - - - - - - - - - - - - */
 
